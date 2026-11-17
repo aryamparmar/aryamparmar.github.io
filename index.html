@@ -3,13 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aryam7676 - Games</title>
-<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 16px;line-height:1.5;color:#222;background:#fff}a{color:#1a5fb4}</style>
+<title>Kiwoo - Puzzle and arcade games</title>
+<meta name="description" content="Kiwoo makes small, clever puzzle and arcade games you can pick up in a minute and keep playing for weeks.">
+<meta property="og:title" content="Kiwoo">
+<meta property="og:description" content="Small, clever puzzle and arcade games.">
+<meta property="og:image" content="https://aryamparmar.github.io/img/header.jpg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>
+:root{--brand:#6237de;--brand-dark:#4a24b8;--bg:#f7f5fd;--card:#fff;--text:#1d1830;--muted:#5d5873;--line:#e6e1f5}
+@media (prefers-color-scheme:dark){:root{--bg:#141022;--card:#1f1933;--text:#f1eefb;--muted:#aaa3c4;--line:#2f2748}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;color:var(--text);background:var(--bg)}
+a{color:inherit}
+.hero{background:var(--brand) url(img/header.jpg) center/cover no-repeat;aspect-ratio:16/6;min-height:200px;max-height:520px;width:100%}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+.intro{display:flex;gap:20px;align-items:center;margin:-48px 0 8px;position:relative}
+.logo{width:96px;height:96px;border-radius:22px;border:4px solid var(--bg);box-shadow:0 6px 20px rgba(40,20,90,.25);flex:none}
+.intro h1{margin:40px 0 0;font-size:2rem;letter-spacing:-.01em}
+.tag{margin:4px 0 32px;color:var(--muted);font-size:1.1rem;max-width:620px}
+h2{font-size:1.1rem;margin:0 0 12px}
+.games{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr));gap:14px;margin-bottom:40px}
+.game{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0}
+.game img{width:72px;height:72px;border-radius:16px}
+.game strong{font-size:1rem}
+.game span{color:var(--muted);font-size:.9rem}
+.btn{display:inline-block;white-space:nowrap;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;padding:8px 14px;border-radius:999px}
+.btn:hover{background:var(--brand-dark)}
+.soon{font-size:.8rem;font-weight:600;color:var(--brand);background:color-mix(in srgb,var(--brand) 12%,transparent);padding:4px 10px;border-radius:999px}
+@media (prefers-color-scheme:dark){.soon{color:#c9b8ff}}
+footer{border-top:1px solid var(--line);padding:20px 0 40px;color:var(--muted);font-size:.9rem;display:flex;gap:20px;flex-wrap:wrap}
+@media (max-width:520px){.intro{margin-top:-36px;gap:14px}.logo{width:72px;height:72px;border-radius:18px}.intro h1{font-size:1.6rem;margin-top:32px}}
+</style>
 </head>
 <body>
-<h1>Aryam7676</h1>
-<p>Independent mobile games.</p>
-<p><a href="https://play.google.com/store/apps/details?id=io.aryam.arrowspire">Arrowspire: Arrow Puzzle on Google Play</a></p>
-<p><a href="legal/">Privacy policies</a></p>
+<div class="hero" role="img" aria-label="Kiwoo logo with characters from Arrowspire, Mindwink, Scrap Gun and Claim.io"></div>
+<main class="wrap">
+  <div class="intro">
+    <img class="logo" src="img/kiwoo-192.png" alt="Kiwoo logo">
+    <h1>Kiwoo</h1>
+  </div>
+  <p class="tag">Kiwoo makes small, clever puzzle and arcade games you can pick up in a minute and keep playing for weeks.</p>
+
+  <h2>Our games</h2>
+  <section class="games">
+    <div class="game">
+      <img src="img/arrowspire.png" alt="Arrowspire icon">
+      <strong>Arrowspire: Arrow Puzzle</strong>
+      <span>Tap arrows to slide them off the board and reveal a hidden picture.</span>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=io.aryam.arrowspire">Google Play</a>
+    </div>
+    <div class="game">
+      <img src="img/scrapgun.png" alt="Scrap Gun icon">
+      <strong>Scrap Gun</strong>
+      <span>Shoot robots apart and bolt their scrap onto your gun.</span>
+      <span class="soon">Coming soon</span>
+    </div>
+    <div class="game">
+      <img src="img/mindwink.png" alt="Mindwink icon">
+      <strong>Mindwink</strong>
+      <span>Trick puzzles where the obvious answer is wrong.</span>
+      <span class="soon">Coming soon</span>
+    </div>
+    <div class="game">
+      <img src="img/claimio.png" alt="Claim.io icon">
+      <strong>Claim.io</strong>
+      <span>Draw loops, claim land and cut rivals' trails.</span>
+      <span class="soon">Coming soon</span>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Kiwoo</span>
+    <a href="legal/">Privacy policies</a>
+    <a href="https://play.google.com/store/apps/dev?id=4617638831939310711">Kiwoo on Google Play</a>
+  </footer>
+</main>
 </body>
 </html>
